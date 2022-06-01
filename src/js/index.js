@@ -37,10 +37,10 @@ setInterval(function () {
 	contador++;
 	ReactDOM.render(
 		<ContadorSimple
-			digitoUno={uno}
-			digitoDos={dos}
-			digitoTres={tres}
-			digitoCuatro={cuatro}
+			digitoUno={uno % 10}
+			digitoDos={dos % 10}
+			digitoTres={tres % 10}
+			digitoCuatro={cuatro % 10}
 		/>,
 		document.querySelector("#app")
 	);
